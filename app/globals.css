@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .hamburger-line {
-	@apply my-2 block h-[2px] w-[30px] bg-neutral-100;
+	@apply my-2 block h-[2px] w-[30px] bg-dark dark:bg-white;
 }
 
 .active > span:nth-child(1) {
