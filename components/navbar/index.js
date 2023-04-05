@@ -6,16 +6,16 @@ export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<header className="fixed top-0 left-0 z-10 flex w-full justify-center items-center bg-neutral-900">
+		<header className="absolute top-0 left-0 z-10 flex w-full justify-center items-center bg-neutral-800">
 			<div className="container">
 				<div className="relative flex items-center justify-between">
 					<div className="px-4">
-						<a href="#home" className="block py-6 text-lg font-bold text-neutral-100">
-							Brand
-						</a>
+						<Link href="/" className="block py-6 text-lg font-bold text-white">
+							Naufal Adhi
+						</Link>
 					</div>
 					<div className="flex items-center px-4">
-						<button id="hamburger" name="hamburger" type="button" className={`absolute right-4 block lg:hidden ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+						<button id="hamburger" name="hamburger" type="button" className={`absolute right-4 block ${isOpen ? 'active' : ''} lg:hidden`} onClick={() => setIsOpen(!isOpen)}>
 							<span className="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
 							<span className="hamburger-line transition duration-300 ease-in-out"></span>
 							<span className="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
@@ -23,33 +23,33 @@ export default function Navbar() {
 
 						<nav
 							id="nav-menu"
-							className={`absolute right-4 top-full w-full ${
+							className={`absolute right-4 top-full w-full max-w-[250px] ${
 								!isOpen ? 'hidden' : ''
-							} max-w-[250px] rounded-lg bg-neutral-900 py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent`}
+							} rounded-lg bg-neutral-800 py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent`}
 						>
 							<ul className="block lg:flex">
 								<li className="group">
-									<Link href="#home" className="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">
+									<Link href="#home" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										Home
 									</Link>
 								</li>
 								<li className="group">
-									<Link href="#about" className="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">
+									<Link href="#about" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										About
 									</Link>
 								</li>
 								<li className="group">
-									<a href="#portfolio" className="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">
+									<Link href="#portfolio" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										Portfolio
-									</a>
+									</Link>
 								</li>
 								<li className="group">
-									<Link href="#clients" className="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">
+									<Link href="#clients" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										Client
 									</Link>
 								</li>
 								<li className="group">
-									<Link href="#contact" className="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">
+									<Link href="#contact" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										Contact
 									</Link>
 								</li>
