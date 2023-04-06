@@ -1,17 +1,25 @@
 'use client';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
+	const [scroll, setScroll] = useState(false);
+	useEffect(() => {
+		window.addEventListener('scroll', () => {
+			setScroll(window.scrollY > 0);
+		});
+	}, []);
 
 	return (
-		<header className="absolute top-0 left-0 z-10 flex w-full justify-center items-center bg-neutral-800">
+		<header className={`fixed top-0 left-0 z-10 flex w-full justify-center items-center bg-transparent ${scroll ? 'backdrop-blur-sm shadow-lg' : ''} `}>
 			<div className="container">
 				<div className="relative flex items-center justify-between">
 					<div className="px-4">
-						<Link href="/" className="block py-6 text-lg font-bold text-white">
-							Naufal Adhi
+						<Link href="/" className="block py-6 text-lg font-bold text-primary">
+							Mathive
 						</Link>
 					</div>
 					<div className="flex items-center px-4">
@@ -25,7 +33,7 @@ export default function Navbar() {
 							id="nav-menu"
 							className={`absolute right-4 top-full w-full max-w-[250px] ${
 								!isOpen ? 'hidden' : ''
-							} rounded-lg bg-neutral-800 py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent`}
+							} rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent`}
 						>
 							<ul className="block lg:flex">
 								<li className="group">
@@ -53,18 +61,14 @@ export default function Navbar() {
 										Contact
 									</Link>
 								</li>
-								{/* <li className="mt-3 flex items-center pl-8 lg:mt-0">
-									<div className="flex">
-										<span className="mr-2 text-sm text-slate-500">Light</span>
-										<input type="checkbox" id="dark-toggle" className="hidden" />
-										<label for="dark-toggle">
-											<div className="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-												<div className="toggle h-4 w-4 rounded-full bg-white transition duration-500 ease-in-out"></div>
-											</div>
-										</label>
-										<span className="ml-2 text-sm text-slate-500">Dark</span>
-									</div>
-								</li> */}
+
+								<li className="mt-3 flex items-center pl-8 lg:mt-0">
+									<span className="lg:hidden mr-16">Theme</span>
+									<button className="flex items-center gap-2 px-4 py-2 shadow-lg rounded-md bg-slate-300 group-hover:text-primary lg:bg-transparent lg:shadow-none">
+										<FontAwesomeIcon icon={faSun} />
+										<span className="lg:hidden">Light</span>
+									</button>
+								</li>
 							</ul>
 						</nav>
 					</div>
