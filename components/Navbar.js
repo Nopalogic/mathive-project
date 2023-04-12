@@ -37,27 +37,27 @@ export default function Navbar() {
 						>
 							<ul className="block lg:flex">
 								<li className="group">
-									<Link href="#home" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
+									<Link href="/" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										Home
 									</Link>
 								</li>
 								<li className="group">
-									<Link href="#about" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
-										About
+									<Link href="/modul" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
+										Modul
 									</Link>
 								</li>
 								<li className="group">
-									<Link href="#portfolio" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
+									<Link href="/" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										Portfolio
 									</Link>
 								</li>
 								<li className="group">
-									<Link href="#clients" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
+									<Link href="/" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										Client
 									</Link>
 								</li>
 								<li className="group">
-									<Link href="#contact" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
+									<Link href="/" className="mx-8 flex py-2 text-base group-hover:text-primary dark:text-white">
 										Contact
 									</Link>
 								</li>
