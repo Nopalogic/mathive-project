@@ -1,10 +1,8 @@
 import Card from '@/components/Card';
+import { modules } from '@/utils/data';
 import Link from 'next/link';
 
-import { modules } from '@/utils/data';
-
 export default function Modul() {
-	
 	return (
 		<>
 			<section className="pt-24 pb-16 bg-slate-200 dark:bg-slate-800">
@@ -15,12 +13,11 @@ export default function Modul() {
 						</div>
 					</div>
 					<div className="w-full px-4">
-						<h2 className="mb-4 text-xl font-bold text-primary">Aljabar Linear</h2>
 						<div className="block justify-center gap-7 lg:flex flex-wrap">
 							{modules.map((module, i) => (
 								<div key={i}>
-									<Link href={'/'}>
-										<Card title={module.title} category={module.category} />
+									<Link href={module.url}>
+										<Card image={module.image} title={module.title} category={module.category} />
 									</Link>
 								</div>
 							))}
