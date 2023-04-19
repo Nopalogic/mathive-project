@@ -1,6 +1,7 @@
 export const modules = [
-  { title: 'matriks', category: 'aljabar linear' },
-  { title: 'determinan', category: 'aljabar linear' },
-  { title: 'invers', category: 'aljabar linear' },
-  { title: 'gauss', category: 'aljabar linear' },
+	{ title: 'Matriks', category: 'aljabar linear', url: '/modul/matriks' },
+	{ title: 'Aljabar Matriks', category: 'aljabar linear', url: '/modul/aljabar-matriks' },
+	{ title: 'Determinan Matriks', category: 'aljabar linear', url: '/modul/' },
+	{ title: 'Invers Matriks', category: 'aljabar linear', url: '/modul/' },
+	{ title: 'Sistem Persamaan Linear', category: 'aljabar linear', url: '/modul/' },
 ];
