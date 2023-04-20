@@ -14,7 +14,7 @@ export default function AljabarMatriks() {
 					<div className="block lg:flex lg:gap-4">
 						<div className="w-full lg:w-4/6 h-screen mb-4 bg-neutral-100 rounded-2xl">
 							<section className='px-4 py-4'>
-								<h4 className='font-bold text-2xl'>Pengertian Matriks</h4>
+								<h4 className='font-bold text-2xl'>Aljabar Matriks</h4>
 								<hr className='my-2 bg-slate-500' />
 								<p>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad culpa provident consequatur suscipit earum, hic illum quibusdam tempore architecto commodi fugiat, praesentium

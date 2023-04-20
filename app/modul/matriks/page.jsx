@@ -13,14 +13,23 @@ export default function Matriks() {
 					</div>
 					<div className="block lg:flex lg:gap-4">
 						<div className="w-full lg:w-4/6 h-screen mb-4 bg-neutral-100 rounded-2xl">
-							<section className='px-4 py-4'>
-								<h4 className='font-bold text-2xl'>Pengertian Matriks</h4>
-								<hr className='my-2 bg-slate-500' />
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad culpa provident consequatur suscipit earum, hic illum quibusdam tempore architecto commodi fugiat, praesentium
-									neque blanditiis doloremque distinctio id omnis, quidem amet. Doloremque sunt dolores libero quasi tempora cupiditate cum, esse quo, dolore dignissimos provident numquam doloribus
-									quos pariatur ut voluptatem.
-								</p>
+							<section className="px-4 py-4">
+								<article>
+									<h4 className="font-bold text-2xl">Pengertian Matriks</h4>
+									<hr className="my-2 bg-slate-500" />
+									<p>
+										Matriks merupakan susunan dari bilangan yang diatur dalam baris dan kolom, bilangan tersebut disebut elemen matriks. Susunan bilangan-bilangan itu dibatasi oleh tanda kurung{' '}
+										{'( )'} dan kurung siku {'[ ]'}.
+									</p>
+								</article>
+								<article>
+									<h4 className="font-bold text-2xl">Pengertian Matriks</h4>
+									<hr className="my-2 bg-slate-500" />
+									<p>
+										Matriks merupakan susunan dari bilangan yang diatur dalam baris dan kolom, bilangan tersebut disebut elemen matriks. Susunan bilangan-bilangan itu dibatasi oleh tanda kurung{' '}
+										{'( )'} dan kurung siku {'[ ]'}.
+									</p>
+								</article>
 							</section>
 						</div>
 						<div className="w-full lg:w-2/6 h-screen mb-4 bg-neutral-100 rounded-2xl"></div>
