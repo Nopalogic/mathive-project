@@ -23,11 +23,12 @@ export default function Matriks() {
 									</p>
 								</article>
 								<article>
-									<h4 className="font-bold text-2xl">Pengertian Matriks</h4>
+									<h4 className="font-bold text-2xl">Notasi Matriks</h4>
 									<hr className="my-2 bg-slate-500" />
+									<p>Suatu matriks biasanya dinotasikan dengan huruf kapital dan secara umum ditulis sebagai berikut:</p>
 									<p>
-										Matriks merupakan susunan dari bilangan yang diatur dalam baris dan kolom, bilangan tersebut disebut elemen matriks. Susunan bilangan-bilangan itu dibatasi oleh tanda kurung{' '}
-										{'( )'} dan kurung siku {'[ ]'}.
+										A merupakan nama matriks sedangan amn adalah elemen matriks. Deretan horizontal dari elemen matriks disebut baris dan deretan vertikal pada elemen matriks disebut kolom. Index m
+										menunjukkan nomor baris pada elemen matriks dan indek n menunjukkan nomor kolom elemen matriks.
 									</p>
 								</article>
 							</section>
