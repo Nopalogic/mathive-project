@@ -1,5 +1,4 @@
 // 'use client'
-import { InlineMath } from 'react-katex';
 
 export default function Matriks() {
 	return (
@@ -26,9 +25,37 @@ export default function Matriks() {
 									<h4 className="font-bold text-2xl">Notasi Matriks</h4>
 									<hr className="my-2 bg-slate-500" />
 									<p>Suatu matriks biasanya dinotasikan dengan huruf kapital dan secara umum ditulis sebagai berikut:</p>
+								</article>
+								<article>
+									<h4 className="font-bold text-2xl">Ordo Matriks</h4>
+									<hr className="my-2 bg-slate-500" />
 									<p>
-										A merupakan nama matriks sedangan amn adalah elemen matriks. Deretan horizontal dari elemen matriks disebut baris dan deretan vertikal pada elemen matriks disebut kolom. Index m
-										menunjukkan nomor baris pada elemen matriks dan indek n menunjukkan nomor kolom elemen matriks.
+										Ordo merupakan ukuran matriks yang ditentukan dari banyaknya baris dan kolom pada matriks. Jika terdapat sebuah matriks dengan m baris dan n kolom, maka baris tersebut memiliki
+										ordo m x n.
+									</p>
+								</article>
+								<article>
+									<h4 className="font-bold text-2xl">Jenis dan sifat Matriks</h4>
+									<hr className="my-2 bg-slate-500" />
+									<p>
+										Ordo merupakan ukuran matriks yang ditentukan dari banyaknya baris dan kolom pada matriks. Jika terdapat sebuah matriks dengan m baris dan n kolom, maka baris tersebut memiliki
+										ordo m x n.
+									</p>
+								</article>
+								<article>
+									<h4 className="font-bold text-2xl">Kesamaan Matriks</h4>
+									<hr className="my-2 bg-slate-500" />
+									<p>
+										Ordo merupakan ukuran matriks yang ditentukan dari banyaknya baris dan kolom pada matriks. Jika terdapat sebuah matriks dengan m baris dan n kolom, maka baris tersebut memiliki
+										ordo m x n.
+									</p>
+								</article>
+								<article>
+									<h4 className="font-bold text-2xl">Transpose Matriks</h4>
+									<hr className="my-2 bg-slate-500" />
+									<p>
+										Ordo merupakan ukuran matriks yang ditentukan dari banyaknya baris dan kolom pada matriks. Jika terdapat sebuah matriks dengan m baris dan n kolom, maka baris tersebut memiliki
+										ordo m x n.
 									</p>
 								</article>
 							</section>
